@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <title>My App</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="../resource/img/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="../resource/lib/css/bootstrap/3-1-1/bootstrap.css"/>
+        <link rel="stylesheet" href="app.css"/>
+    </head>
+
+    <body>
+        <ul class="menu">
+            <li><a href="#/section1">section1</a></li>
+            <li><a href="#/section2">section2</a></li>
+        </ul>
+
+        <div ng-view></div>
+
+        <div>Angular seed app: v<span app-version></span></div>
+
+        <!-- in production use CDNs -->
+        <script src="../resource/lib/js/angular/1-2-15/angular.js"></script>
+        <script src="../resource/lib/js/angular/1-2-15/angular-route.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="../resource/lib/js/bootstrap/3-1-1/bootstrap.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
